@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>system-ui testing</title>
+    <meta name="description" content="Tests behaviour of the system-ui font family with font-face declaration">
+    <meta name="author" content="David Paul">
+    <style type="text/css">
+        /*! system-font.css v1.1.0 | CC0-1.0 License | github.com/jonathantneal/system-font-face */
+        @font-face {
+            font-family: system-ui;
+            font-style: normal;
+            font-weight: 300;
+            src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+        }
+
+        @font-face {
+            font-family: system-ui;
+            font-style: italic;
+            font-weight: 300;
+            src: local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic"), local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
+        }
+
+        @font-face {
+            font-family: system-ui;
+            font-style: normal;
+            font-weight: 400;
+            src: local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Segoe UI"), local("Ubuntu"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma");
+        }
+
+        @font-face {
+            font-family: system-ui;
+            font-style: italic;
+            font-weight: 400;
+            src: local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Italic"), local("Ubuntu Italic"), local("Roboto-Italic"), local("DroidSans"), local("Tahoma");
+        }
+
+        @font-face {
+            font-family: system-ui;
+            font-style: normal;
+            font-weight: 500;
+            src: local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold"), local("Ubuntu Medium"), local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+        }
+
+        @font-face {
+            font-family: system-ui;
+            font-style: italic;
+            font-weight: 500;
+            src: local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+        }
+
+        @font-face {
+            font-family: system-ui;
+            font-style: normal;
+            font-weight: 700;
+            src: local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Tahoma Bold");
+        }
+
+        @font-face {
+            font-family: system-ui;
+            font-style: italic;
+            font-weight: 700;
+            src: local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"), local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+        }
+
+        html {
+            font-family: system-ui;
+        }
+
+        .light{
+            font-weight: 300;
+        }
+
+        .light-italic {
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .regular {
+            font-weight: 400;
+        }
+
+        .regular-italic {
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .medium {
+            font-weight: 500;
+        }
+
+        .medium-italic {
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .bold-italic {
+            font-weight: 700;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Using system-ui with @font-face defined as per Jonathan Neal's system-font-css</h1>
+    <h2>This sets the font-face to use a different local font dependending on the weight and style that is used</h2>
+
+    <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat egestas sagittis. Nunc suscipit tristique urna eu efficitur. Nam ut velit pellentesque dui consequat sollicitudin. Nunc volutpat orci at egestas consequat. Nam quam purus, dignissim quis eleifend vel, eleifend sed elit. Cras facilisis eget dui eu lobortis. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <hr>
+    <p class="light-italic">Quisque nisi ipsum, tincidunt at imperdiet eget, venenatis at libero. Fusce tincidunt iaculis lectus eget mattis. Pellentesque mauris diam, pharetra ut laoreet nec, tristique vitae dolor. Nunc laoreet justo a risus dapibus rhoncus. Suspendisse faucibus velit ut nisl sollicitudin sagittis vitae at odio. Fusce mauris nisl, sagittis quis lectus non, venenatis auctor ipsum. Phasellus a mauris dignissim, pulvinar dolor suscipit, aliquet nisi. Etiam diam erat, porta ut ligula non, dignissim ultrices tellus. Cras lobortis laoreet suscipit. Nam nec eros metus. Proin id eros elementum, pulvinar purus pulvinar, fringilla mauris. Maecenas sit amet malesuada tortor. Phasellus vitae laoreet felis.</p>
+    <hr>
+    <p class="regular">Nulla vel metus finibus, tincidunt felis ut, condimentum enim. Quisque quis hendrerit enim. Phasellus vitae mi quis tortor scelerisque lobortis. Cras urna ex, eleifend et metus in, sodales vulputate dolor. Suspendisse dapibus semper sem, et efficitur nisl. Maecenas ac nunc dictum, rutrum elit auctor, iaculis arcu. Suspendisse convallis ante a bibendum mattis. Cras lobortis iaculis luctus. Curabitur id pellentesque enim, non lobortis nibh. Maecenas aliquet, neque non posuere mollis, tortor tellus facilisis erat, ac tincidunt ante augue eget nulla. Mauris id massa quam. Donec rhoncus eu mi sit amet pretium. Proin diam sapien, dictum quis efficitur in, vestibulum id justo. Aliquam ut massa consectetur, congue leo eu, egestas sapien.</p>
+    <hr>
+    <p class="regular-italic">Aliquam sit amet sagittis nunc. Nullam urna metus, pellentesque vel luctus vitae, vulputate at sapien. Donec tortor tellus, lobortis vulputate diam at, ornare pretium eros. Duis vel metus nec tellus tristique auctor blandit auctor urna. Curabitur ullamcorper, nibh id facilisis blandit, leo arcu consequat elit, sed viverra metus leo a libero. Vivamus in semper arcu, sollicitudin iaculis ipsum. Aliquam non porttitor sem. Integer convallis arcu non diam feugiat, sit amet venenatis erat feugiat. Nulla in elit ac libero blandit ultrices ut ut enim. Vestibulum mauris lorem, mattis ornare ex porta, aliquam interdum tortor. Vestibulum arcu magna, posuere eget consectetur id, lobortis eget mi. Vivamus rutrum ante vitae sapien aliquet, sed pulvinar ligula malesuada.</p>
+    <hr>
+    <p class="medium">Suspendisse sollicitudin metus lectus, sed sodales massa lobortis vel. Nam condimentum erat nec lorem eleifend luctus. Duis et mollis lacus, id aliquam metus. Vestibulum a sapien id velit bibendum faucibus venenatis sit amet lectus. Donec dictum turpis eu mattis auctor. Ut dapibus tempus tempus. Vivamus et semper nibh, at ultricies sem.</p>
+    <hr>
+    <p class="medium-italic">In elementum aliquet leo, sit amet consequat lorem efficitur sollicitudin. Duis scelerisque justo eu mauris eleifend, eu sollicitudin odio laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin facilisis vitae sapien vel dapibus. Ut sed fermentum odio. Morbi bibendum, purus ac suscipit mattis, lacus mauris tristique felis, vel condimentum augue ligula at dolor. Pellentesque rhoncus eget justo in consequat. Maecenas lorem sem, dignissim tincidunt nibh eget, malesuada dapibus ligula. Aliquam varius lectus nec ligula molestie mattis. Pellentesque mi mi, viverra et turpis eget, venenatis rhoncus libero. Sed nec turpis eget urna porta scelerisque sit amet ut erat. Vivamus feugiat congue diam vitae bibendum. Integer vitae magna mollis, pretium risus rhoncus, dapibus sapien. Suspendisse sed arcu quis nunc hendrerit fringilla in vel felis.</p>
+    <hr>
+    <p class="bold">Suspendisse potenti. Ut mollis auctor mauris, id pellentesque quam ultricies non. Aliquam quis sodales justo. Aenean bibendum porta sem a sollicitudin. Aenean eros tellus, congue quis imperdiet at, sagittis eget augue. Ut quis cursus nunc. Nam nibh neque, hendrerit et fermentum ut, tempor ut orci. Nulla eget nunc ex. Duis facilisis ligula nec faucibus convallis. Integer eleifend ipsum vel feugiat gravida. Pellentesque metus dui, vulputate sed facilisis ut, sagittis quis est.</p>
+    <hr>
+    <p class="bold-italic">Morbi mollis orci lorem, nec consectetur sapien varius quis. Maecenas et augue bibendum, consectetur lacus vitae, efficitur lorem. Cras vestibulum, arcu eget imperdiet consequat, tortor turpis euismod risus, ut semper lacus felis a diam. Sed ultrices nulla eu metus interdum, at tincidunt ante convallis. Mauris at dolor turpis. Aenean vel justo eros. Phasellus nibh nunc, euismod eget semper tristique, ornare vel ante. Sed laoreet eros eget diam porttitor pretium. Nullam commodo aliquet suscipit. Vivamus a tempus nunc, id posuere justo. In pellentesque turpis libero, in cursus enim consequat at. Donec sed luctus nisl. Nunc malesuada neque nec est dapibus eleifend. Pellentesque gravida diam nec orci molestie, ut molestie enim feugiat.</p>
+</body>
+</html>

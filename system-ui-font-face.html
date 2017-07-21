@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>system-ui testing</title>
+    <meta name="description" content="Tests behaviour of the system-ui font family with font-face declaration that differs to known system font">
+    <meta name="author" content="David Paul">
+    <style type="text/css">
+        @font-face {
+            font-family: system-ui;
+            font-style: normal;
+            src: local("Helvetica Neue"); /* checking whether the system font (.SF NS Text) is used, or this newly defined "Helvetica Neue" */
+        }
+
+        html {
+            font-family: system-ui;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Using system-ui with @font-face setting src: local("Helvetica Neue")</h1>
+    <h2>This sets the font-face to "Helvetica Neue" to prove that the system-font is not coming through when font-face is defined (on Mac Sierra where system font is .SF NS Text)</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat egestas sagittis. Nunc suscipit tristique urna eu efficitur. Nam ut velit pellentesque dui consequat sollicitudin. Nunc volutpat orci at egestas consequat. Nam quam purus, dignissim quis eleifend vel, eleifend sed elit. Cras facilisis eget dui eu lobortis. Nulla facilisi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <hr>
+    <p>Quisque nisi ipsum, tincidunt at imperdiet eget, venenatis at libero. Fusce tincidunt iaculis lectus eget mattis. Pellentesque mauris diam, pharetra ut laoreet nec, tristique vitae dolor. Nunc laoreet justo a risus dapibus rhoncus. Suspendisse faucibus velit ut nisl sollicitudin sagittis vitae at odio. Fusce mauris nisl, sagittis quis lectus non, venenatis auctor ipsum. Phasellus a mauris dignissim, pulvinar dolor suscipit, aliquet nisi. Etiam diam erat, porta ut ligula non, dignissim ultrices tellus. Cras lobortis laoreet suscipit. Nam nec eros metus. Proin id eros elementum, pulvinar purus pulvinar, fringilla mauris. Maecenas sit amet malesuada tortor. Phasellus vitae laoreet felis.</p>
+    <hr>
+    <p>Nulla vel metus finibus, tincidunt felis ut, condimentum enim. Quisque quis hendrerit enim. Phasellus vitae mi quis tortor scelerisque lobortis. Cras urna ex, eleifend et metus in, sodales vulputate dolor. Suspendisse dapibus semper sem, et efficitur nisl. Maecenas ac nunc dictum, rutrum elit auctor, iaculis arcu. Suspendisse convallis ante a bibendum mattis. Cras lobortis iaculis luctus. Curabitur id pellentesque enim, non lobortis nibh. Maecenas aliquet, neque non posuere mollis, tortor tellus facilisis erat, ac tincidunt ante augue eget nulla. Mauris id massa quam. Donec rhoncus eu mi sit amet pretium. Proin diam sapien, dictum quis efficitur in, vestibulum id justo. Aliquam ut massa consectetur, congue leo eu, egestas sapien.</p>
+    <hr>
+    <p>Aliquam sit amet sagittis nunc. Nullam urna metus, pellentesque vel luctus vitae, vulputate at sapien. Donec tortor tellus, lobortis vulputate diam at, ornare pretium eros. Duis vel metus nec tellus tristique auctor blandit auctor urna. Curabitur ullamcorper, nibh id facilisis blandit, leo arcu consequat elit, sed viverra metus leo a libero. Vivamus in semper arcu, sollicitudin iaculis ipsum. Aliquam non porttitor sem. Integer convallis arcu non diam feugiat, sit amet venenatis erat feugiat. Nulla in elit ac libero blandit ultrices ut ut enim. Vestibulum mauris lorem, mattis ornare ex porta, aliquam interdum tortor. Vestibulum arcu magna, posuere eget consectetur id, lobortis eget mi. Vivamus rutrum ante vitae sapien aliquet, sed pulvinar ligula malesuada.</p>
+    <hr>
+    <p>Suspendisse sollicitudin metus lectus, sed sodales massa lobortis vel. Nam condimentum erat nec lorem eleifend luctus. Duis et mollis lacus, id aliquam metus. Vestibulum a sapien id velit bibendum faucibus venenatis sit amet lectus. Donec dictum turpis eu mattis auctor. Ut dapibus tempus tempus. Vivamus et semper nibh, at ultricies sem.</p>
+</body>
+</html>
